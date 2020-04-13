@@ -18,6 +18,7 @@ window.onload = function(e) {
         });
         target.addEventListener("mouseenter", e => {
             document.getElementById("mover").style.display = "unset";
+            this.console.log(e);
         });
         target.addEventListener("mouseleave", e => {
             document.getElementById("mover").style.display = "none";
