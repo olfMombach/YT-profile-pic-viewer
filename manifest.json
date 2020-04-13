@@ -6,8 +6,7 @@
     "description": "Shows the full size profile picture when hovering over a YouTube account",
 
     "permissions": [
-        "activeTab",
-        "https://yt3.ggpht.com"
+        "activeTab"
     ],
 
     "content_scripts": [
