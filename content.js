@@ -2,7 +2,6 @@ let img = document.createElement("img");
 img.style.display = "none";
 img.style.position = "absolute";
 img.id = "profilePicMover";
-img.src = "http://hoppla1232.bplaced.net/assets/cat2.png";
 img.style.zIndex = "99999";
 document.body.appendChild(img);
 
