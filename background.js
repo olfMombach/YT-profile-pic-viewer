@@ -1,5 +1,5 @@
-browser.pageAction.onClicked.addListener((tab, data) => {
-    browser.tabs.sendMessage(
+chrome.pageAction.onClicked.addListener((tab, data) => {
+    chrome.tabs.sendMessage(
         tab.id,
         {}
     ).then(response => {}).catch(error => {

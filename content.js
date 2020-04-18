@@ -29,6 +29,6 @@ window.setTimeout(setUpListeners_comments, 1000);
 window.setTimeout(setUpListeners_comments, 3000);
 window.setTimeout(setUpListeners_comments, 10000);
 
-browser.runtime.onMessage.addListener(request => {
+chrome.runtime.onMessage.addListener(request => {
     setUpListeners_comments();
 });
