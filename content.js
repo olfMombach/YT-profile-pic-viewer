@@ -1,3 +1,5 @@
+console.log("Start");
+
 let img = document.createElement("img");
 img.style.display = "none";
 img.style.position = "absolute";
@@ -5,7 +7,7 @@ img.id = "profilePicMover";
 img.style.zIndex = "99999";
 document.body.appendChild(img);
 
-window.setTimeout(e => {
+function setUpListeners_comments(e){
     let comments = document.getElementsByTagName("ytd-comments")[0];
 
     comments.addEventListener("mousemove", e => {
@@ -21,4 +23,8 @@ window.setTimeout(e => {
         let mover = document.getElementById("profilePicMover");
         mover.style.display = "none";
     });
-}, 2000);
+}
+
+window.setTimeout(setUpListeners_comments, 1000);
+window.setTimeout(setUpListeners_comments, 3000);
+window.setTimeout(setUpListeners_comments, 10000);
