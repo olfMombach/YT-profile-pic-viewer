@@ -7,7 +7,7 @@ img.id = "profilePicMover";
 img.style.zIndex = "99999";
 document.body.appendChild(img);
 
-function setUpListeners_comments(e){
+function setUpListeners_comments(){
     let comments = document.getElementsByTagName("ytd-comments")[0];
 
     comments.addEventListener("mousemove", e => {
@@ -28,3 +28,7 @@ function setUpListeners_comments(e){
 window.setTimeout(setUpListeners_comments, 1000);
 window.setTimeout(setUpListeners_comments, 3000);
 window.setTimeout(setUpListeners_comments, 10000);
+
+browser.runtime.onMessage.addListener(request => {
+    setUpListeners_comments();
+});
